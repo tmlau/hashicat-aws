@@ -20,6 +20,8 @@ resource aws_subnet "hashicat" {
 
   tags = {
     name = "${var.prefix}-subnet"
+    Billable = "yes"
+    Department = "Profitable-LOB"
   }
 }
 
@@ -59,6 +61,8 @@ resource aws_security_group "hashicat" {
 
   tags = {
     Name = "${var.prefix}-security-group"
+    Billable = "yes"
+    Department = "Profitable-LOB"
   }
 }
 
@@ -72,6 +76,8 @@ resource aws_internet_gateway "hashicat" {
 
   tags = {
     Name = "${var.prefix}-internet-gateway"
+    Billable = "yes"
+    Department = "Profitable-LOB"
   }
 }
 
@@ -116,6 +122,8 @@ resource aws_instance "hashicat" {
 
   tags = {
     Name = "${var.prefix}-hashicat-instance"
+    Billable = "yes"
+    Department = "Profitable-LOB"
   }
 }
 
